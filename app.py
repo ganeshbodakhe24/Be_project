@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 from flask_mysqldb import MySQL
-from datetime import datetime
 from flask import flash
 from flask_mail import Mail, Message
-import pandas as pd
 # for search article
 from sentence_transformers import SentenceTransformer, util
 import torch

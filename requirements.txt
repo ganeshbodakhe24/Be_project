@@ -1,7 +1,6 @@
+gunicorn
 Flask
 flask-mysqldb
 flask-mail
-gunicorn
-pandas
 torch
 sentence-transformers
