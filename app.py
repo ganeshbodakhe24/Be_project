@@ -22,10 +22,10 @@ from datetime import timedelta
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=7)  # Keep the session alive for 7 days
 
 # MySQL Configurations
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'login'
+app.config['MYSQL_HOST'] = 'sql10.freesqldatabase.com'
+app.config['MYSQL_USER'] = 'sql10783591'
+app.config['MYSQL_PASSWORD'] = 'ID27NUfEnS'
+app.config['MYSQL_DB'] = 'sql10783591'
 mysql = MySQL(app)
 
 # Mail Send
@@ -627,8 +627,13 @@ def contact():
     return render_template('contact.html', logged_in=logged_in, username=username)
 
 
+# if __name__ == '__main__':
+#     app.run(debug=True, port=5001)
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
 
 # @app.route('/full_summary/<path:article_link>')  # Accept full URLs
 # def full_summary(article_link):
