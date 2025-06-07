@@ -1,0 +1,173 @@
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* background-color: #ffffff; */
+}
+
+.contact-content {
+    display: flex;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    gap: 40px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-info {
+    position: relative;
+    overflow: hidden;
+    margin:auto;
+    width: 700px;
+    background-color: rgb(6, 49, 70);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-info-inner {
+   z-index:2;
+    margin: 30px;
+    width: 90%;
+    text-align: left;
+    color: white;
+    /* background-color: #b5b7bd; */
+}
+
+
+.circle_1 {
+
+    position:absolute;
+    z-index:1;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(88, 101, 108, 0.288);
+    border-radius: 50%;
+    bottom:50px;
+    right:50px;
+}
+.circle_2 {
+    position:absolute;
+    z-index:1;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(59, 82, 96, 0.507);
+    border-radius: 50%;
+    bottom:0px;
+    right:0px;
+}
+.social_icon{
+    color:white;
+    margin:20px;
+    font-size:24px;
+ 
+}
+
+@media (max-width:720px) {
+    .contact-info {
+        width: 90%;
+    }
+
+    .contact-content {
+        width: 90%;
+    }
+    .circle_1,.circle_2{
+        /* display:none; */
+    }
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d4787;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.role-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.role-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.role-buttons button:focus,
+.role-buttons button:hover {
+    background-color: #d66025;
+    color: white;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #d66025;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: rgba(163, 73, 28, 0.8);
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+.error {
+    border-color: red;
+}
+.selected {
+    background-color: #007bff;
+    color: white;
+}
+.selected{
+    background-color: #d66025;
+}

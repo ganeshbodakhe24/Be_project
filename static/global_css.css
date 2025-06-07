@@ -1,0 +1,188 @@
+ /* nav bar css */
+ /* Navbar background */
+.navbar-custom {
+    background-color: rgb(248, 243, 217); /* lightest cream */
+    padding: 10px 20px;
+    /* Add bottom shadow */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand and links */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: rgb(80, 75, 56); /* dark olive */
+    font-weight: 500;
+    padding: 8px 12px;
+}
+
+/* Hover effects */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: rgb(163, 163, 160); /* warm olive */
+}
+
+/* Search bar */
+.search_bar {
+    width: 20%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 229, 194); /* beige */
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+/* Search input */
+.search-input {
+    width: 90%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgb(248, 243, 217);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search button */
+.search-btn {
+    background: rgb(185, 178, 138); 
+    border: none;
+    color: white;
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn:hover {
+    background-color: rgb(80, 75, 56); 
+    color: white;
+}
+
+.search_bar {
+    width: 20%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 229, 194);
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 800px) {
+    .search_bar {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-btn {
+        margin-left: 6px;
+    }
+}
+
+
+/* User actions */
+.navbar-custom .btn-outline-light {
+    border-color: rgb(185, 178, 138);
+    color: rgb(80, 75, 56);
+    background-color: rgb(235, 229, 194);
+    padding: 6px 12px;
+}
+
+.navbar-custom .btn-outline-light:hover {
+    background-color: rgb(185, 178, 138);
+    color: white;
+}
+
+/* Username and icons color in dark tone */
+.navbar-custom .user-info {
+    color: rgb(80, 75, 56);  /* dark olive */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Icon color specifically */
+.navbar-custom .user-info i {
+    color: rgb(80, 75, 56);  /* dark olive */
+    font-size: 1.2rem;
+}
+
+/* Optional: Add hover effect for icons */
+.navbar-custom .user-info a:hover i {
+    color: rgb(185, 178, 138); /* hover with warm olive */
+}
+
+ /* nav bar css end */
+ 
+ /* button colors */
+ .custom_btn_color {
+
+     background-color: rgb(170, 170, 170);
+ }
+
+ .custom_btn_color:hover {
+     background-color: rgb(139, 139, 139);
+ }
+
+ .custom_btn_color_1 {
+     background-color: rgb(239, 220, 171);
+ }
+
+ .custom_btn_color_1:hover {
+     background-color: rgb(242, 246, 208);
+ }
+
+ .custom_btn_color_2 {
+     background-color: rgb(168, 101, 35);
+ }
+
+ .custom_btn_color_2:hover {
+     background-color: rgb(208, 138, 68);
+ }
+
+  .custom_btn_color_3 {
+     background-color: rgb(185, 178, 138);
+     /* color:white; */
+ }
+
+ .custom_btn_color_3:hover {
+     background-color: rgb(235, 229, 194);
+ }
+ .text-color {
+     color: #505050;
+ }
+
+
+ /* sentiment style  */
+ .custom-sentiment {
+     font-weight: bold;
+     color: #444;
+ }
+
+ .custom-sentiment.positive {
+     color: #27ae60;
+ }
+
+ .custom-sentiment.negative {
+     color: #e74c3c;
+ }
+
+ .custom-sentiment.neutral {
+     color: #f1c40f;
+ }
+
+ /* sentiment style end  */

@@ -1,0 +1,357 @@
+/* Global Font Family */
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.logo a img {
+    height: 100%;
+}
+
+.nav_outer {
+
+    width: 100%;
+    background-color: rgb(38, 68, 136);
+    display: flex;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.nav_list {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    overflow: hidden;
+}
+
+.nav_list ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    /* Aligns list items properly */
+    padding: 0;
+    margin: 0;
+    /* Removes default margin */
+}
+
+.nav_list ul li {
+    display: flex;
+}
+
+.nav_list ul li a {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(38, 68, 136);
+    border-radius: 2px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    /* border-bottom: 2px solid #f70000; */
+}
+
+.nav_list ul li a:hover {
+    background-color: rgb(31, 56, 117);
+}
+/* Initially hide the mobile dropdown */
+#dropdownMenu {
+  display: none;
+  /* other styles like position, background, etc. */
+}
+
+/* Show when active */
+#dropdownMenu.active {
+  display: block;
+  /* or use flex/grid depending on your layout */
+}
+
+
+.active {
+    border-radius: 0%;
+    border-bottom: 2px solid white;
+}
+
+
+.search-btn:hover {
+    background: rgb(130, 130, 130);
+    color: white;
+
+}
+
+.search-btn i {
+    font-size: 16px;
+}
+
+.nav_buttons {
+    width: 40%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav_buttons p {
+    margin: 0 10px 0 10px;
+    padding-right: 20px;
+    color: white;
+}
+
+.nav_buttons button {
+    margin-right: 20px;
+}
+
+.nav_buttons i {
+    font-size: 30px;
+    color: white
+}
+
+/* hide big nav bar */
+
+@media (max-width: 950px) {
+    .nav_hide {
+        display: none;
+    }
+
+}
+
+
+/* mobile view */
+/* rough */
+.mb_nav_outer {
+    width: 100%;
+    background-color: rgb(38, 68, 136);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensures spacing between logo & button */
+    padding: 10px 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.mb_logo {
+    height: 40px;
+}
+
+.mb_logo a img {
+    height: 100%;
+}
+
+.inverted-image {
+    filter: invert(100%);
+}
+
+.mb_toggle_button {
+    display: flex;
+    align-items: center;
+}
+
+.mb_toggle_button button {
+    background-color: transparent;
+    /* No background */
+    border: none;
+    /* No border */
+    color: white;
+    /* Icon color */
+    font-size: 24px;
+    /* Icon size */
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.mb_toggle_button button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.mb_dropdown {
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(75, 75, 75);
+}
+
+/* Show dropdown when active */
+.mb_dropdown.active {
+    display: block;
+}
+
+/* mb list */
+.mb_list {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.mb_list ul {
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mb_list ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgb(120, 120, 120);
+}
+
+.mb_list ul li a {
+    display: block;
+    /* Ensures full width */
+    width: 100%;
+    /* Makes the link take full width */
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(67, 67, 67);
+    /* background-color: rgba(0, 0, 0, 0.281); */
+}
+
+/* Hover effect */
+.mb_list ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+/* search btn */
+/* Mobile Search Bar */
+.mb_search_bar {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px auto;
+
+}
+
+.mb_search_input {
+    width: 80%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(120, 120, 120);
+
+}
+
+.mb_search_btn {
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(67, 67, 67);
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mb_search_btn:hover {
+    background: rgb(130, 130, 130);
+    color: white;
+}
+
+/* Mobile Login Buttons */
+.mb_nav_buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(120, 120, 120);
+
+}
+
+.mb_nav_buttons p {
+    margin: 0;
+    padding-right: 10px;
+    color: rgb(67, 67, 67);
+}
+
+.mb_btn {
+    /* width:200px; */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(59, 59, 59);
+    background: transparent;
+    color: rgb(67, 67, 67);
+    cursor: pointer;
+    text-align: center;
+}
+
+.mb_btn:hover {
+    background: white;
+    color: black;
+}
+
+
+@media (min-width: 950px) {
+    .mb_nav_outer {
+        display: none;
+    }
+
+    .mb_dropdown {
+        display: none;
+    }
+
+    /* Show dropdown when active */
+    .mb_dropdown.active {
+        display: none;
+    }
+
+}
+
+
+.navbar {
+            background-color: rgb(38, 68, 136);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: rgb(163, 73, 28);
+        }
+    /* Username styling */
+    .username {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #007bff;
+      margin-right: 15px;
+      padding: 5px 10px;
+      background-color: #f0f8ff;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .username:hover {
+      color: #0056b3;
+      background-color: #e6f7ff;
+      text-decoration: none;
+    }
+/* new css for nav bar  */
