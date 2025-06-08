@@ -1,6 +1,5 @@
-﻿flask
+flask
 flask-mysqldb
-Flask-Mail
-gunicorn
-sentence-transformers==4.1.0
-torch==2.6.0
+flask-mail
+sentence-transformers
+torch
